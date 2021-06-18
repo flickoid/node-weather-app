@@ -1,5 +1,3 @@
-console.log("Client side JavaScript file is loaded");
-
 fetch("/weather?address=!").then((response) => {
   response.json().then((data) => {
     if (data.error) {
